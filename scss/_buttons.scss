@@ -1,0 +1,27 @@
+.pageDownBtn {
+    i {
+    font-size: 5em;
+    color: $primary;
+    background: none;
+    position: absolute;
+    top: 90%;
+    left: 85%;
+    z-index: 3;
+    }
+}
+
+@include xl {
+    .pageDownBtn i {
+        display: none;
+    }
+}
+
+.pageUpBtn i {
+    font-size: 5em;
+    color: $primary;
+    background: none;
+    position: absolute;
+    top: 105%;
+    left: 85%;
+    z-index: 3;
+}

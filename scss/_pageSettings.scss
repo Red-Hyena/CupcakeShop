@@ -1,0 +1,29 @@
+// Font Import
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+
+// Colours
+$black: #000;
+$white: #fff;
+$primary: #daa520;
+$secondary: #cd7f32;
+
+// Page Setup
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html {
+    font: 400 10px 'Zilla Slab', serif;
+    background: $black;
+}
+// Images
+picture {
+    source {
+        max-width: 100vw;
+        max-height: 90vh;
+    }
+}

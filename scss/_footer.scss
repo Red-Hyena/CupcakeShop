@@ -1,0 +1,10 @@
+.footerFlex {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid $primary;
+    margin: 0px;
+}

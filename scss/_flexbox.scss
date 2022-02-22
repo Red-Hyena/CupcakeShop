@@ -1,0 +1,20 @@
+.topPageFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+@include xl {
+    .topPageFlex {
+        align-items: flex-end;
+    }
+}
+
+.bottomPageFlex {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+}

@@ -1,0 +1,41 @@
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-around;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 1.8em;
+        font-weight: 500;
+        text-decoration: none;
+        border-bottom: 3px solid $primary;
+        height: 10vh;
+        text-align: center;
+        color: $white;
+        width: 100px;
+    }
+}
+
+@include md {
+    .navbar {
+        a {
+            font-size: 3.6em;
+            border-bottom: 5px solid $primary;
+            width: 200px;
+        }
+    }
+}
+
+@include xl {
+    .navbar {
+        justify-content: flex-end;
+
+        a {
+            margin-right: 2.5vw;
+        }
+    }
+}
