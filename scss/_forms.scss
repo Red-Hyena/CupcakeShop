@@ -1,0 +1,68 @@
+.contactUsForm {
+    input {
+        margin-bottom: 20px;
+    }
+    input[type="text"] {
+        border: 2px solid $primary;
+        height: 30px;
+    }
+    input[type="text"]:focus {
+        border: 3px solid $primary;
+        background-color: $black;
+        color: $primary;
+    }
+    input[type="email"] {
+        border: 2px solid $primary;
+        height: 30px;
+    }
+    input[type="email"]:focus {
+        border: 3px solid $primary;
+        background-color: $black;
+        color: $primary;
+    }
+    input[type="submit"] {
+        width: 100px;
+        height: 50px;
+        border: 3px solid $primary;
+        background-color: $black;
+        color: $primary;
+        font-size: 1.8em;
+    }
+
+}
+
+// Medium breakpoint (768px)
+@include md {
+    .contactUsForm {
+        input {
+            margin-bottom: 30px;
+        }
+        input[type="text"] {
+            border: 3px solid $primary;
+            height: 40px;
+        }
+        input[type="text"]:focus {
+            border: 4px solid $primary;
+            background-color: $black;
+            color: $primary;
+        }
+        input[type="email"] {
+            border: 3px solid $primary;
+            height: 40px;
+        }
+        input[type="email"]:focus {
+            border: 4px solid $primary;
+            background-color: $black;
+            color: $primary;
+        }
+        input[type="submit"] {
+            width: 150px;
+            height: 75px;
+            border: 4px solid $primary;
+            background-color: $black;
+            color: $primary;
+            font-size: 2.4em;
+        }
+    
+    }
+}
