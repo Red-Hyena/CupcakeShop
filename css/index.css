@@ -57,6 +57,24 @@ input {
   font-size: 1.6em;
 }
 
+.showMoreBtn {
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #000;
+}
+
+.formSwitchBtn {
+  font-size: 1.8em;
+  font-weight: 500;
+  color: #daa520;
+}
+
+.totalCostText {
+  font-size: 1.6em;
+  color: #000;
+  text-align: left;
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 7.2em;
@@ -80,8 +98,25 @@ input {
     color: #fff;
   }
 
+  .showMoreBtn {
+    font-size: 1.6em;
+    font-weight: 300;
+    color: #000;
+  }
+
+  .formSwitchBtn {
+    font-size: 2.4em;
+    font-weight: 500;
+    color: #daa520;
+  }
+
   input {
     font-size: 2.4em;
+  }
+
+  .totalCostText {
+    font-size: 1.8em;
+    text-align: left;
   }
 }
 @media (min-width: 1200px) {
@@ -118,6 +153,68 @@ input {
   align-items: center;
 }
 
+.activeFormFlex {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.inactiveFormFlex {
+  display: none;
+}
+
+.cakeFormSubFlex {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100vw;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.textExtraForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100vw;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.totalCostFlex {
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.oneBtnSwitchFlex {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.twoBtnSwitchFlex {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+@media (min-width: 768px) {
+  .cakeFormSubFlex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 200vw;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .navbar {
   display: flex;
   flex-direction: row;
@@ -213,6 +310,17 @@ img {
   font-size: 1.8em;
 }
 
+#textExtra {
+  width: 150px;
+  height: 50px;
+  padding: 0px 10px;
+  border: 2px solid #daa520;
+}
+
+.customLabel {
+  width: 150px;
+}
+
 @media (min-width: 768px) {
   .contactUsForm input {
     margin-bottom: 30px;
@@ -243,6 +351,10 @@ img {
     color: #daa520;
     font-size: 2.4em;
   }
+
+  .customLabel {
+    width: 250px;
+  }
 }
 .pageDownBtn i {
   font-size: 5em;
@@ -254,11 +366,6 @@ img {
   z-index: 3;
 }
 
-@media (min-width: 1200px) {
-  .pageDownBtn i {
-    display: none;
-  }
-}
 .pageUpBtn i {
   font-size: 5em;
   color: #daa520;
@@ -267,4 +374,79 @@ img {
   top: 105%;
   left: 85%;
   z-index: 3;
+}
+
+.totalCostBtn {
+  width: 250px;
+  height: 75px;
+  background-color: #daa520;
+  border: 2px solid #000;
+  border-radius: 1em;
+}
+
+.customInput {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 2px solid #daa520;
+}
+
+.showMoreBtn {
+  width: 100px;
+  height: 25px;
+  background: #daa520;
+  border: 3px solid #000;
+  border-radius: 1em;
+}
+
+.formSwitchBtn {
+  width: 140px;
+  height: 50px;
+  margin-top: 50px;
+  background-color: #000;
+  border: 4px solid #daa520;
+}
+
+@media (min-width: 768px) {
+  .customInput {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 3px solid #daa520;
+  }
+
+  .showMoreBtn {
+    width: 125px;
+    height: 40px;
+    background: #daa520;
+    border: 3px solid #000;
+    border-radius: 1em;
+  }
+
+  .formSwitchBtn {
+    width: 200px;
+    height: 75px;
+    margin-top: 50px;
+    background-color: #000;
+    border: 4px solid #daa520;
+  }
+
+  .totalCostBtn {
+    width: 350px;
+    height: 10vh;
+    border: 4px solid #000;
+    border-radius: 1em;
+  }
+}
+@media (min-width: 1200px) {
+  .pageDownBtn i {
+    display: none;
+  }
+
+  .totalCostBtn {
+    width: 500px;
+    height: 10vh;
+    border: 8px solid #000;
+    border-radius: 1em;
+  }
 }

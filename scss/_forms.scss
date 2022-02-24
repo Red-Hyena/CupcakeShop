@@ -28,7 +28,15 @@
         color: $primary;
         font-size: 1.8em;
     }
-
+}
+#textExtra {
+    width: 150px;
+    height: 50px;
+    padding: 0px 10px;
+    border: 2px solid $primary;
+}
+.customLabel {
+    width: 150px;
 }
 
 // Medium breakpoint (768px)
@@ -63,6 +71,8 @@
             color: $primary;
             font-size: 2.4em;
         }
-    
+    }
+    .customLabel {
+        width: 250px;
     }
 }

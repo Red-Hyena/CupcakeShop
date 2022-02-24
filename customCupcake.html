@@ -6,13 +6,214 @@
         <title>Outer Heaven - Custom Cupcakes</title>
         <link rel="stylesheet" href="css/index.css">
         <script src="https://kit.fontawesome.com/bab2533d74.js"></script>
+        <script src="/js/transitionScript.js" defer></script>
+        <script src="/js/costUpdateScript.js" defer></script>
     </head>
 
     <body>
-        <nav class="navbar">
-            <a href="index.html"><br>Home</a>
+        <nav class="navbar" id="topPageBookmark">
+            <a href="index.html">Home</a>
             <a href="customCupcake.html">Custom Cupcakes</a>
-            <a href="contact.html"><br>Contact Us</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
+
+        <div class="activeFormFlex" id="cakeFlex">
+            <form class="cakeForm">
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="homeCC" 
+                    name="cakeType" value="1.80">
+                    <label class="custom customLabel" for="homeCC">Home = £1.80</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="glutenFreeCC" 
+                    name="cakeType" value="1.80">
+                    <label class="custom customLabel" for="glutenFreeCC">Gluten Free = £1.80</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="vanillaCC" 
+                    name="cakeType" value="2.00">
+                    <label class="custom customLabel" for="vanillaCC">Vanilla = £2.00</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>                
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="gingerCC" 
+                    name="cakeType" value="2.00">
+                    <label class="custom customLabel" for="gingerCC">Ginger = £2.00</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="chocolateCC" 
+                    name="cakeType" value="2.20">
+                    <label class="custom customLabel" for="chocolateCC">Chocolate = £2.20</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="oneBtnSwitchFlex">
+                    <button class="formSwitchBtn cakeToFlavour" type="button">
+                        Flavour <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+                </div>
+            </form>
+            
+        </div>
+
+        <div class="inactiveFormFlex" id="flavourFlex">
+            <form class="flavourForm">
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="lemonCF" 
+                    name="flavourType" value="0.10">
+                    <label class="custom customLabel" for="lemonCF">Lemon + £0.10</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="blueberryCF" 
+                    name="flavourType" value="0.20">
+                    <label class="custom customLabel" for="blueberryCF">Blueberry + £0.20</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="raspberryCF" 
+                    name="flavourType" value="0.20">
+                    <label class="custom customLabel" for="raspberryCF">Raspberry + £0.20</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="strawberryCF" 
+                    name="flavourType" value="0.20">
+                    <label class="custom customLabel" for="strawberryCF">Strawberry + £0.20</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="whiteCholateCF" 
+                    name="flavourType" value="0.30">
+                    <label class="custom customLabel" for="whiteCholateCF">
+                        White Chocolate + £0.30</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+            </form>
+            <div class="twoBtnSwitchFlex">
+                <button class="formSwitchBtn flavourToCake" type="button">
+                    Cake <i class="fas fa-long-arrow-alt-left"></i></button>
+                <button class="formSwitchBtn flavourToIcing" type="button">
+                    Icing <i class="fas fa-long-arrow-alt-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="inactiveFormFlex" id="icingFlex">
+            <form class="icingForm">
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="redCI" 
+                    name="icingType" value="0.10">
+                    <label class="custom customLabel" for="redCI">Red + £0.10</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="pinkCI" 
+                    name="icingType" value="0.10">
+                    <label class="custom customLabel" for="pinkCI">Pink + £0.10</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="blueCI" 
+                    name="icingType" value="0.20">
+                    <label class="custom customLabel" for="blueCI">Blue + £0.20</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="purpleCI" 
+                    name="icingType" value="0.20">
+                    <label class="custom customLabel" for="purpleCI">Purple + £0.20</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="rainbowCI" 
+                    name="icingType" value="0.30">
+                    <label class="custom customLabel" for="rainbowCI">Rainbow + £0.30</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+            </form>
+            <div class="twoBtnSwitchFlex">
+                <button class="formSwitchBtn icingToFlavour" type="button">
+                    Flavour <i class="fas fa-long-arrow-alt-left"></i>
+                </button>
+                <button class="formSwitchBtn icingToDecorations" type="button">
+                    Decorations <i class="fas fa-long-arrow-alt-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="inactiveFormFlex" id="decorationsFlex">
+            <form class="decorationsForm">
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="hundredsCD" 
+                    name="decorationType" value="0.10">
+                    <label class="custom customLabel" for="hundredsCD">100's & 1000's + £0.10</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="unicornsCD" 
+                    name="decorationType" value="0.20">
+                    <label class="custom customLabel" for="unicornsCD">Unicorns + £0.20</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="chocolateChipCD" 
+                    name="decorationType" value="0.30">
+                    <label class="custom customLabel" for="chocolateChipCD">Chocolate Chip + £0.30</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="whiteChocolateCD" 
+                    name="decorationType" value="0.30">
+                    <label class="custom customLabel" for="whiteChocolateCD">White Chocolate + £0.30</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+                <div class="cakeFormSubFlex">
+                    <input class="custom customInput" type="radio" id="strawberryCD" 
+                    name="decorationType" value="0.50">
+                    <label class="custom customLabel" for="strawberryCD">Strawberry + £0.50</label>
+                    <button class="custom showMoreBtn" type="button">Show more</button><br>
+                </div>
+            </form>
+            <div class="twoBtnSwitchFlex">
+                <button class="formSwitchBtn decorationsToIcing" type="button">
+                    Icing <i class="fas fa-long-arrow-alt-left"></i>
+                </button>
+                <button class="formSwitchBtn decorationsToTextExtra" type="button">
+                    Text Extra <i class="fas fa-long-arrow-alt-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="inactiveFormFlex" id="textExtraFlex">
+            <form class="textExtraForm">
+                <label form="textExtra">Enter up to 12 characters</label>
+                <input class="textExtraInput" type="text" id="textExtra" name="textExtra" maxlength="15">
+                <button class="textExtraConfirm" type="button">Confirm</button>
+            </form>
+            <div class="oneBtnSwitchFlex">
+                <button class="formSwitchBtn textExtraToDecorations" type="button">
+                    Decorations <i class="fas fa-long-arrow-alt-left"></i>
+                </button>
+            </div>            
+        </div>
+
+        <div class="totalCostFlex">
+            <button class="totalCostBtn" type="button">
+                <p class="totalCostText" id="totalCostInput"></p>                
+                <p class="totalCostText">Ready to Order?</p>
+            </button>
+        </div>
+
+        <footer class="footerFlex">
+            <a class="footerLink" href="https://twitter.com/?lang=en-gb">Twitter
+            <i class="fab fa-twitter"></i></a>
+            <a class="footerLink" href="https://en-gb.facebook.com/">Facebook
+            <i class="fab fa-facebook"></i></a>
+            <a class="footerLink" href="https://www.instagram.com/">Instagram
+            <i class="fab fa-instagram"></i>
+        </footer>
     </body>            
 </html>
