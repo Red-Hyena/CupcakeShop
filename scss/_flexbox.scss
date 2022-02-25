@@ -27,7 +27,7 @@
     flex-direction: column;
     align-items: center;
 }
-// Custom Page Forms
+// Custom Cupcake Page Forms
 
 .activeFormFlex {
     display: flex;
@@ -51,9 +51,9 @@
 .textExtraForm {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 50px;
     width: 100vw;
-    height: 100px;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -84,5 +84,8 @@
         height: 75px;
         justify-content: center;
         align-items: center;
+    }
+    .oneBtnSwitchFlex {
+        margin: 0px auto;
     }
 }

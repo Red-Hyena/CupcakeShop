@@ -1,4 +1,19 @@
-img {
+.topPageFlex {
+    background-image: url(/img/PastryShop\(768px\)-min.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 90vh;
+}
+@include md {
+    .topPageFlex {
+        background-image: url(/img/PastryShop\(1200px\)-min.jpg);
+    }
+}
+@include xl {
+    .topPageFlex {
+        background-image: url(/img/PastryShop\(Desktop-Aspect-Ratio\).png);
+    }
+}
+/*img {
     display: block;
     position: absolute;
     top: 10vh;
@@ -8,7 +23,7 @@ img {
     z-index: 1;
 }
 
-/*@include xl {
+@include xl {
     img {
         top: 0;
         left: 0;

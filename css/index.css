@@ -21,6 +21,7 @@ h1 {
   font-size: 3.6em;
   color: #cd7f32;
   background: none;
+  text-shadow: 2px 2px #000;
   text-align: center;
   margin: 20px 0px;
   z-index: 2;
@@ -48,6 +49,17 @@ p {
   color: #daa520;
 }
 
+.creditList {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #cd7f32;
+}
+.creditList a {
+  font-weight: 400;
+  color: #daa520;
+  text-decoration: underline;
+}
+
 label {
   font-size: 1.6em;
   color: #fff;
@@ -73,6 +85,12 @@ input {
   font-size: 1.6em;
   color: #000;
   text-align: left;
+}
+
+.textExtraConfirm {
+  font-size: 1.6em;
+  text-align: center;
+  color: #daa520;
 }
 
 @media (min-width: 768px) {
@@ -117,6 +135,11 @@ input {
   .totalCostText {
     font-size: 1.8em;
     text-align: left;
+    width: 100%;
+  }
+
+  .textExtraConfirm {
+    font-size: 2.4em;
   }
 }
 @media (min-width: 1200px) {
@@ -178,9 +201,9 @@ input {
 .textExtraForm {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 50px;
   width: 100vw;
-  height: 100px;
+  height: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -213,6 +236,10 @@ input {
     height: 75px;
     justify-content: center;
     align-items: center;
+  }
+
+  .oneBtnSwitchFlex {
+    margin: 0px auto;
   }
 }
 .navbar {
@@ -262,17 +289,33 @@ input {
   border: 2px solid #daa520;
 }
 
-img {
-  display: block;
-  position: absolute;
-  top: 10vh;
-  left: 0;
-  width: 100vw;
-  height: 90vh;
-  z-index: 1;
+.topPageFlex {
+  background-image: url(/img/PastryShop\(768px\)-min.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 90vh;
 }
 
-/*@include xl {
+@media (min-width: 768px) {
+  .topPageFlex {
+    background-image: url(/img/PastryShop\(1200px\)-min.jpg);
+  }
+}
+@media (min-width: 1200px) {
+  .topPageFlex {
+    background-image: url(/img/PastryShop\(Desktop-Aspect-Ratio\).png);
+  }
+}
+/*img {
+    display: block;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100vw;
+    height: 90vh;
+    z-index: 1;
+}
+
+@include xl {
     img {
         top: 0;
         left: 0;
@@ -352,6 +395,13 @@ img {
     font-size: 2.4em;
   }
 
+  #textExtra {
+    width: 250px;
+    height: 75px;
+    padding: 0px 10px;
+    border: 3px solid #daa520;
+  }
+
   .customLabel {
     width: 250px;
   }
@@ -407,7 +457,22 @@ img {
   border: 4px solid #daa520;
 }
 
+.textExtraConfirm {
+  width: 100px;
+  height: 30px;
+  background: #000;
+  border: 3px solid #daa520;
+}
+
 @media (min-width: 768px) {
+  .pageDownBtn i {
+    font-size: 8em;
+  }
+
+  .pageUpBtn i {
+    font-size: 8em;
+  }
+
   .customInput {
     width: 40px;
     height: 40px;
@@ -433,14 +498,28 @@ img {
 
   .totalCostBtn {
     width: 350px;
-    height: 10vh;
+    height: 125px;
     border: 4px solid #000;
     border-radius: 1em;
+  }
+
+  .textExtraConfirm {
+    width: 200px;
+    height: 60px;
+    background: #000;
+    border: 4px solid #daa520;
   }
 }
 @media (min-width: 1200px) {
   .pageDownBtn i {
-    display: none;
+    font-size: 12em;
+    top: 80%;
+    left: 95%;
+  }
+
+  .pageUpBtn i {
+    font-size: 12em;
+    left: 95%;
   }
 
   .totalCostBtn {

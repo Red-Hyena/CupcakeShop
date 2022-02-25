@@ -2,6 +2,7 @@ h1 {
     font-size: 3.6em;
     color: $secondary;
     background: none;
+    text-shadow: 2px 2px $black;
     text-align: center;
     margin: 20px 0px;
     z-index: 2;
@@ -15,17 +16,25 @@ h2 {
 #bottomPageBookmark {
     margin-top: 10vh;
 }
-
 p {
     font-size: 1.6em;
     color: $white;
     margin: 0px 10vw 0px 5vw;
 }
-
 .footerLink {
     font-size: 1.4em;
     text-decoration: none;
     color: $primary;
+}
+.creditList {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: $secondary;
+    a {
+        font-weight: 400;
+        color: $primary;
+        text-decoration: underline;
+    }
 }
 label {
     font-size: 1.6em;
@@ -48,6 +57,11 @@ input {
     font-size: 1.6em;
     color: $black;
     text-align: left;
+}
+.textExtraConfirm {
+    font-size: 1.6em;
+    text-align: center;
+    color: $primary;
 }
 // Medium breakpoint (768px)
 @include md {
@@ -84,6 +98,10 @@ input {
     .totalCostText {
         font-size: 1.8em;
         text-align: left;
+        width: 100%;
+    }
+    .textExtraConfirm {
+        font-size: 2.4em;
     }
 }
 
